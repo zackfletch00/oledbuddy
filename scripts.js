@@ -1,5 +1,5 @@
 // Event listener for all Download buttons
-document.querySelectorAll('a[href="downloads/OLEDBuddyTrial.dmg"]').forEach(button => {
+document.querySelectorAll('a[href="downloads/OLED Buddy v1.dmg"]').forEach(button => {
     button.addEventListener('click', function(e) {
         e.preventDefault(); // Prevent default anchor behavior
         showDisclaimerDialog();
@@ -33,7 +33,7 @@ function showDisclaimerDialog() {
     // Event listener for the Agree button within the modal
     modal.querySelector('.agree-btn').addEventListener('click', function() {
         // Start the download
-        window.location.href = 'downloads/OLEDBuddyTrial.dmg';
+        window.location.href = 'downloads/OLED Buddy v1.dmg';
         closeDisclaimerDialog();
     });
 
